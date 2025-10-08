@@ -1,1 +1,7 @@
-<p>albums-list works!</p>
+<div class="container">
+    <ul class="list-group">
+        @for (a of albums; track $index) {
+        <li class="list-group-item"><a [routerLink]="['/', 'photos']">{{a.title}}</a></li>
+        }
+    </ul>
+</div>
