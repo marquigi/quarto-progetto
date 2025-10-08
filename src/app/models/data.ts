@@ -1,5 +1,3 @@
-export type Albums = Album[]
-export type Photos = Photo[]
 
 export interface Album {
     userId: number
