@@ -13,7 +13,7 @@ export const routes: Routes = [
         component: AlbumsList
     },
     {
-        path: "photos",
+        path: "photos/:id",
         component: PhotoList
     },
 ];
