@@ -1,5 +1,5 @@
+@for (p of photos; track $index) {
 <li class="list-group-item">
-    @for (p of photos; track $index) {
     <a [routerLink]="['/','photos', p.id]">{{ p.title }}</a>
-    }
 </li>
+}
