@@ -1,10 +1,11 @@
 <div class="container row mt-2">
     @for (p of photos; track $index) {
+
     <div class="card col-md-4 mb-4 mx-2" style="width: 18rem" [routerLink]="['/','photos', p.id]">
-        <img [src]="p.thumbnailUrl" alt="" class="card-img-top">
-        <div class="card-body">{{ p.title }}</div>
+        <a [href]="p.url" target="_blank">
+            <img [src]="p.thumbnailUrl" alt="{{ p.title }}" class="card-img-top">
+            <div class="card-body">{{ p.title }}</div>
+        </a>
     </div>
     }
 </div>
-
-<p>prova</p>
