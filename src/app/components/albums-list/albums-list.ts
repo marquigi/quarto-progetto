@@ -20,6 +20,4 @@ export class AlbumsList implements OnInit {
       .then(a => this.albums = a)
       .catch(err => console.log("ERRORE RECUPERO DATI"))
   }
-
-
 }
